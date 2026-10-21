@@ -1,0 +1,27 @@
+DerpFest v17 (Android 17) for the Pixel 8 Pro (husky), build 20261021
+Security patch: 2026-10-01 (system), 2026-08-05 (vendor). Stock Pixel firmware: bootloader-husky-ripcurrent-17.0-15681527.img + radio-husky-g5300i-260604-260807-b-16036236.img.
+
+Notes:
+==============================
+- Unofficial build, signed with its own keys: updates from other ROMs (Evolution X included) don't install on it, and moving between ROMs needs a clean install.
+- The update includes the stock Pixel firmware (bootloader and radio).
+- Rooted? Before rebooting, install Magisk (or KernelSU) to the inactive slot, or root is gone after the update.
+- Kernel: LineageOS's gs-6.1 kernel (Linux 6.1), built from source with the ROM.
+- First installs need a computer: see https://sourceforge.net/projects/denson9874-s-user-builds/files/derpfest/husky/
+
+Device changes:
+==============================
+- point DerpFest's Updater at our own OTA repo
+- DerpFest 17 product settings
+- shusky: Copy missing fingerprint permission xml
+- shusky: Mark NowPlayingPrebuilt.apk as PRESIGNED
+- shusky: Update to CP2A.260805.005
+- shusky: Update to CP2A.260705.006
+- shusky: Rename horribly named manifest.xml
+- shusky: Update properties from CP2A.260605.012
+- shusky: Update SPL from CP2A.260605.012
+- shusky: Import generated sepolicy from CP2A.260605.012
+
+ROM changes since the last build:
+==============================
+None recorded
