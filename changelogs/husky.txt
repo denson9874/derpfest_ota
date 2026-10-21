@@ -7,7 +7,7 @@ Notes:
 - The update includes the stock Pixel firmware (bootloader and radio).
 - Rooted? Before rebooting, install Magisk (or KernelSU) to the inactive slot, or root is gone after the update.
 - Kernel: LineageOS's gs-6.1 kernel (Linux 6.1), built from source with the ROM.
-- First installs need a computer: see https://sourceforge.net/projects/denson9874-s-user-builds/files/derpfest/husky/
+- First installs need a computer: see https://xdaforums.com/t/4805779/
 
 Device changes:
 ==============================
