@@ -1,4 +1,4 @@
-DerpFest v17 (Android 17) for the Pixel 8 Pro (husky), build 20261021
+DerpFest v17 (Android 17) for the Pixel 8 Pro (husky), build 20261023
 Security patch: 2026-10-01 (system), 2026-08-05 (vendor). Stock Pixel firmware: bootloader-husky-ripcurrent-17.0-15681527.img + radio-husky-g5300i-260604-260807-b-16036236.img.
 
 Notes:
@@ -11,17 +11,11 @@ Notes:
 
 Device changes:
 ==============================
-- point DerpFest's Updater at our own OTA repo
-- DerpFest 17 product settings
-- shusky: Copy missing fingerprint permission xml
-- shusky: Mark NowPlayingPrebuilt.apk as PRESIGNED
-- shusky: Update to CP2A.260805.005
-- shusky: Update to CP2A.260705.006
-- shusky: Rename horribly named manifest.xml
-- shusky: Update properties from CP2A.260605.012
-- shusky: Update SPL from CP2A.260605.012
-- shusky: Import generated sepolicy from CP2A.260605.012
 
 ROM changes since the last build:
 ==============================
-None recorded
+- Apps restored from your Google backup during setup keep their network access (the per-app Network access setting was turned off for some of them)
+- App Lock: Recents Screenshot, Lens and split screen no longer show a locked app's last screen
+- USB debugging (ADB) is off by default again and asks for authorization on your computer
+- Removed the experimental Play Integrity spoofing layer from the first build; DerpFest's own attestation handling is back
+- Kernel 6.1.162 (LineageOS gs-6.1, android14-6.1-2026-03)
