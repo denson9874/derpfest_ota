@@ -1,4 +1,4 @@
-DerpFest v17 (Android 17) for the Pixel 8 Pro (husky), build 20261023
+DerpFest v17 (Android 17) for the Pixel 8 Pro (husky), build 20261024
 Security patch: 2026-10-01 (system), 2026-08-05 (vendor). Stock Pixel firmware: bootloader-husky-ripcurrent-17.0-15681527.img + radio-husky-g5300i-260604-260807-b-16036236.img.
 
 Notes:
@@ -11,11 +11,17 @@ Notes:
 
 Device changes:
 ==============================
+- allow OmniStyle's odex in /system
+- keep Play services from preparing Google's OTAs
+- turn NFC on by default, as stock does
+- keep app odex on /system, not system_other
+- point DerpFest's Updater at our own OTA repo
+- DerpFest 17 product settings
 
 ROM changes since the last build:
 ==============================
-- Apps restored from your Google backup during setup keep their network access (the per-app Network access setting was turned off for some of them)
-- App Lock: Recents Screenshot, Lens and split screen no longer show a locked app's last screen
-- USB debugging (ADB) is off by default again and asks for authorization on your computer
-- Removed the experimental Play Integrity spoofing layer from the first build; DerpFest's own attestation handling is back
-- Kernel 6.1.162 (LineageOS gs-6.1, android14-6.1-2026-03)
+- Preinstalled apps keep their precompiled code across updates (app odex on /system, not system_other)
+- The Contactless payments settings page that apps such as Google Wallet open loads again
+- Play services' resume-on-reboot service is off, as on Evolution X (first unlock asked for the PIN twice there)
+- Private Compute Services isn't restricted by LineageOS's 2022 allowlist anymore (stock dropped it)
+- NFC on after a clean install, as on stock; PinnerService pins DerpFest's SystemUI
