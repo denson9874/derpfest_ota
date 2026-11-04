@@ -1,13 +1,3 @@
 {
-  "response": [
-    {
-      "datetime": 1792859950,
-      "filename": "DerpFest-v17-20261024-husky-Unofficial-Stable.zip",
-      "id": "f5a59020f4b17bc56a55bf7792501885b71035b78dd0340e2b59735cf192eae1",
-      "romtype": "Unofficial",
-      "size": 3153730734,
-      "url": "https://ota-mirror.daryldenson-apps.workers.dev/derpfest/husky/DerpFest-v17-20261024-husky-Unofficial-Stable.zip",
-      "version": "v17"
-    }
-  ]
+  "response": []
 }
