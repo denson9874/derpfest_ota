@@ -1,27 +1,12 @@
-DerpFest v17 (Android 17) for the Pixel 8 Pro (husky), build 20261024
-Security patch: 2026-10-01 (system), 2026-08-05 (vendor). Stock Pixel firmware: bootloader-husky-ripcurrent-17.0-15681527.img + radio-husky-g5300i-260604-260807-b-16036236.img.
+End of support: DerpFest for the Pixel 8 Pro (husky)
 
-Notes:
-==============================
-- Unofficial build, signed with its own keys: updates from other ROMs (Evolution X included) don't install on it, and moving between ROMs needs a clean install.
-- The update includes the stock Pixel firmware (bootloader and radio).
-- Rooted? Before rebooting, install Magisk (or KernelSU) to the inactive slot, or root is gone after the update.
-- Kernel: LineageOS's gs-6.1 kernel (Linux 6.1), built from source with the ROM.
-- First installs need a computer: see https://xdaforums.com/t/4805779/
+These unofficial DerpFest builds are no longer maintained. denson9874 no longer builds or supports DerpFest, so no more updates will come through this feed. The last build was DerpFest-v17-20261024-husky-Unofficial-Stable.zip, and the old downloads are being taken down.
 
-Device changes:
+Where to go next:
 ==============================
-- allow OmniStyle's odex in /system
-- keep Play services from preparing Google's OTAs
-- turn NFC on by default, as stock does
-- keep app odex on /system, not system_other
-- point DerpFest's Updater at our own OTA repo
-- DerpFest 17 product settings
-
-ROM changes since the last build:
-==============================
-- Preinstalled apps keep their precompiled code across updates (app odex on /system, not system_other)
-- The Contactless payments settings page that apps such as Google Wallet open loads again
-- Play services' resume-on-reboot service is off, as on Evolution X (first unlock asked for the PIN twice there)
-- Private Compute Services isn't restricted by LineageOS's 2022 allowlist anymore (stock dropped it)
-- NFC on after a clean install, as on stock; PinnerService pins DerpFest's SystemUI
+- ExpressiveOS is denson9874's own ROM for this phone, built on LineageOS and AOSP, with monthly updates over the air.
+- Install it with the web installer: https://expressiveos-flash.daryldenson-apps.workers.dev
+- ExpressiveOS is signed with its own keys, so moving from DerpFest needs a clean install, which erases the phone. Back up your data first.
+- XDA thread: https://xdaforums.com/t/4807490/
+- Telegram: https://t.me/ExpressiveGroup
+- Sources: https://github.com/ExpressiveOS

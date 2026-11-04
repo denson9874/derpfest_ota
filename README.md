@@ -1,16 +1,19 @@
 # derpfest_ota
 
-Over-the-air update information for denson9874's unofficial DerpFest builds:
-husky (Pixel 8 Pro).
+**End of support (November 2026).** denson9874 no longer builds or supports DerpFest. The
+unofficial DerpFest builds this feed served for husky (Pixel 8 Pro) are no longer maintained, and
+this repository is archived.
 
-These builds ship a runtime overlay that points DerpFest's Updater here instead of
-[DerpFest-AOSP/Updater-Stuff](https://github.com/DerpFest-AOSP/Updater-Stuff), which lists the
-official builds. Those are signed with other keys, so this Updater must never offer them. The
-overlay is removed if a device's build becomes official.
+The successor is [ExpressiveOS](https://github.com/ExpressiveOS), denson9874's own ROM, built on
+LineageOS and AOSP. Install it with the
+[web installer](https://expressiveos-flash.daryldenson-apps.workers.dev). ExpressiveOS is signed
+with its own keys, so moving from DerpFest needs a clean install, which erases the phone: back up
+first. Help and release news: [Telegram](https://t.me/ExpressiveGroup).
 
-DerpFest is its own ROM: these builds are signed with DerpFest-only keys, and this repo is separate
-from the Evolution X one. Moving between DerpFest and another ROM always needs a clean install.
+What's left here:
 
-- `builds/<device>.json`: the latest build, in the Updater's format. The download is the signed A/B
-  OTA package on [SourceForge](https://sourceforge.net/projects/denson9874-s-user-builds/files/derpfest/).
-- `changelogs/<device>.txt`: what changed in that build.
+- `builds/husky.json` holds `{"response": []}`, so the Updater on an old build reports that there
+  are no updates.
+- `changelogs/husky.txt` holds the end-of-support notice with the links above.
+
+The old build downloads are taken down.
